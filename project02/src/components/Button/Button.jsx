@@ -1,4 +1,4 @@
-import styles from './Button.module.css'
+import styles from "./Button.module.css";
 
 // const Button = (props) => {
 
@@ -13,17 +13,16 @@ import styles from './Button.module.css'
 //   )
 // }
 
-
-//below code we have used the destructuring of teh props adn plase the prop with the destructure object
-const Button = ({isOutline,icon,text,...rest}) => {
-
-
+//below code we have used the destructuring of the props adn plase the prop with the destructure object
+const Button = ({ isOutline, icon, text, ...rest }) => {
   return (
-    <button {...rest} className={isOutline ?   styles.outline_btn : styles.primary_btn}
+    <button
+      {...rest}
+      className={isOutline ? styles.outline_btn : styles.primary_btn}
     >
-        {icon}
-        {text}
+      {icon}
+      {text}
     </button>
-  )
-}
-export default Button
+  );
+};
+export default Button;

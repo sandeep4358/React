@@ -1,0 +1,24 @@
+.expense_list {
+  font-family: inherit;
+  border-collapse: collapse;
+  margin: 0 auto;
+  min-width: 1200px;
+}
+
+.expense_list td,
+.expense_list th {
+  padding: 8px;
+}
+
+.expense_list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.expense_list tr:hover {
+  background-color: #ddd;
+}
+
+.expense_list .heading {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
