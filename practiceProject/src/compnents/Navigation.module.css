@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container img {
+  width: 10;
+  height: 36;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container p {
+  margin: 45px 15px 0px 0px;
+}

@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.login_box {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  min-height: 550px;
+  width: 360px;
+}
+
+.login_box form {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.form_element {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_element label {
+  font-size: 14px;
+}
+
+.form_element input {
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 100px;
+  height: 120px;
+}
+/* Resize images */
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.login_box button {
+  width: 220px;
+}

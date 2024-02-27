@@ -1,0 +1,26 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  min-width: 1700px;
+  height: 100vh;
+  background-color: rgb(207, 187, 187);
+}
+
+.left {
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(238, 159, 159);
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  width: 1700px;
+}

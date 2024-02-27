@@ -1,7 +1,11 @@
-import NumberSystem from "./numberSystem";
+import EntryPage from "./compnents/EntryPage";
 
 const App = () => {
-  return <NumberSystem />;
+  return (
+    <>
+      <EntryPage></EntryPage>
+    </>
+  );
 };
 
 export default App;

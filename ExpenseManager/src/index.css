@@ -1,0 +1,29 @@
+.main_content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.loading {
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin: 1rem auto;
+}
+
+.red {
+  color: red;
+}
+
+.error_msg {
+  color: red;
+  letter-spacing: 1px;
+  margin-top: 4px;
+  font-size: 20px;
+}
+
+.success_msg {
+  color: greenyellow;
+  letter-spacing: 1px;
+  margin-top: 4px;
+  font-size: 20px;
+}
