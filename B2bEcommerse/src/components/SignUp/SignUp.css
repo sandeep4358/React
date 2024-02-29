@@ -1,0 +1,39 @@
+.main_container {
+  width: 1750px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form_container {
+  padding: 10px 10px;
+  width: 600px;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.form_container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form_controller {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 5px;
+}
+
+.form_controller > label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.form_controller > input,select {
+  padding: 8px 8px;
+  width: 350px;
+  border-radius: 6px;
+}
