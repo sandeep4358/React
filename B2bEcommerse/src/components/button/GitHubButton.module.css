@@ -1,0 +1,32 @@
+.primary_btn {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: #33d661 !important;
+  color: white;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  min-width: 308px;
+  height: 32px;
+  font-size: 16px;
+  gap: 8px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.second_btn {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  padding: 18px 10px;
+  background-color: #d63341 !important;
+  color: white;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  min-width: 308px;
+  height: 32px;
+  font-size: 16px;
+  gap: 8px;
+  justify-content: center;
+  cursor: pointer;
+}

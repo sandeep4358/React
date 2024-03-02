@@ -63,8 +63,8 @@ const ExpenseFormWitoutBootStrap: FC<ExpenseFormWitoutBootStrapProps> = ({
               {...register("expense_type", { required: true })}
             >
               <option value="">Select Type</option>
-              <option value={1}>Cash</option>
-              <option value={2}>Card</option>
+              <option value="Cash">Cash</option>
+              <option value="Card">Card</option>
             </select>
             {errors.expense_type && (
               <p className="error-msg">Please enter expense type</p>
