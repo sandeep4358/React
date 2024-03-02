@@ -1,9 +1,9 @@
-import EntryPage from "./compnents/EntryPage";
-
 const App = () => {
   return (
     <>
-      <EntryPage></EntryPage>
+      <form>
+        <input id="todo" name="todo" /> <button>submit</button>
+      </form>
     </>
   );
 };
