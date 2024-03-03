@@ -40,6 +40,7 @@ const newTodo = (name) => {
 
 const Hook03 = () => {
   const [todos, dispatch] = useReducer(reducer, []);
+  
   const [name, setName] = useState();
 
   function handleSubmit(e) {
