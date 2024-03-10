@@ -1,21 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-.error_msg {
-  color: red;
-  letter-spacing: 1px;
-  margin-top: 4px;
-  font-size: 20px;
-  font-size: 16px;
-}
-
-.success_msg {
-  color: greenyellow;
-  letter-spacing: 1px;
-  margin-top: 4px;
-  font-size: 20px;
-  font-size: 16px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -128,11 +112,4 @@ button {
 
 .line {
   display: inline-block;
-}
-
-.flexGrow {
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
 }

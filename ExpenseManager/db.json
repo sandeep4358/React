@@ -27,6 +27,13 @@
       "expense_date": "2024-02-29",
       "expense_amount": "34",
       "description": "Book"
+    },
+    {
+      "id": "0f49",
+      "expense_type": "Cash",
+      "expense_date": "2024-03-06",
+      "expense_amount": "1100",
+      "description": "Wedding expense"
     }
   ]
 }

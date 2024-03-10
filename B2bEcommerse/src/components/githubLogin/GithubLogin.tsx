@@ -6,6 +6,8 @@ import { UserDetails } from "../../type";
 import axios from "axios";
 import { ACCESS_TOKEN, BASE_API_URL } from "../../constant";
 
+import { useContext } from "react";
+
 const GithubLogin = () => {
   const {
     register,

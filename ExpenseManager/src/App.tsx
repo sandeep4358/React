@@ -18,10 +18,9 @@ const App = () => {
       setIsLoading(true);
       setErrorMsg("");
       const { data } = await axios.get("http://localhost:4000/expenses");
-      console.log("result", data);
       setExpsenses(data);
     } catch (error) {
-      console.log(error);
+      //console.log(error);
       setErrorMsg("Something went worg. Please try again some time.");
     } finally {
       setIsLoading(false);
