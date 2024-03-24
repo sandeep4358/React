@@ -1,13 +1,20 @@
 import GHButton from "../button/GHButton";
 import styles from "./GithubLogin.module.css";
-import AuthContext from "../context/AuthProvider";
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
+/**below is the custom hook designe by sandeep **/
+import useAuth from "../../hooks/useAuth";
+
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 import axios from "../api/axios";
 
 const GithubLogin = () => {
-  const { setAuth } = useContext(AuthContext);
+  const { setAuth } = useAuth();
+  const navigate = useNavigate();
+  const location = useLocation();
+  //from location is the location of the page from where those came.
+  const fromLocation = location.state?.from?.pathname || "/";
 
   const onSignIn = async (data) => {
     console.log("data >> " + data?.userName);
@@ -16,8 +23,12 @@ const GithubLogin = () => {
       /** when login is done then the data is being passed to the userContext object. */
       const response = await axios.post("/accessToken", data);
       const accessToke = response?.data?.data?.token;
-      const roles = response?.data?.data?.roles;
-      setAuth({ accessToke, roles });
+      const stringRoles = response?.data?.data?.roles; //roles is in the string format
+      const roles = stringRoles.split(","); // now converted into arrays.
+      const user = response?.data?.data?.user;
+      setAuth({ user, accessToke, roles });
+      console.log("moving to the page where it comes from location");
+      navigate(fromLocation, { replace: true });
     } catch (error) {
       if (!error?.response) {
         console.log("No server Response.");
